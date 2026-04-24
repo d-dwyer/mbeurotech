@@ -60,3 +60,39 @@ function mbeurotech_menu_link_class( $atts, $item, $args ) {
     return $atts;
 }
 add_filter( 'nav_menu_link_attributes', 'mbeurotech_menu_link_class', 10, 3 );
+
+/**
+ * Fallback menu when no menu is assigned in the dashboard
+ */
+function mbeurotech_default_menu() {
+    $items = array(
+        'Home'     => home_url( '/' ),
+        'Services' => home_url( '/services/' ),
+        'About'    => home_url( '/about/' ),
+        'Contact'  => home_url( '/contact/' ),
+    );
+
+    echo '<ul class="nav__list">';
+    foreach ( $items as $label => $url ) {
+        echo '<li><a href="' . esc_url( $url ) . '" class="nav__link">' . esc_html( $label ) . '</a></li>';
+    }
+    echo '</ul>';
+}
+
+/**
+ * Fallback menu for footer
+ */
+function mbeurotech_footer_menu() {
+    $items = array(
+        'Home'     => home_url( '/' ),
+        'Services' => home_url( '/services/' ),
+        'About'    => home_url( '/about/' ),
+        'Contact'  => home_url( '/contact/' ),
+    );
+
+    echo '<ul class="footer__menu">';
+    foreach ( $items as $label => $url ) {
+        echo '<li><a href="' . esc_url( $url ) . '">' . esc_html( $label ) . '</a></li>';
+    }
+    echo '</ul>';
+}

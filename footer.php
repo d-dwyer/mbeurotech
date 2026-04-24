@@ -23,7 +23,7 @@
                     'theme_location' => 'footer',
                     'container'      => false,
                     'menu_class'     => 'footer__menu',
-                    'fallback_cb'    => false,
+                    'fallback_cb'    => 'mbeurotech_footer_menu',
                 ) );
                 ?>
                 <style>

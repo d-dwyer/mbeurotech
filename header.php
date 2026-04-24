@@ -96,7 +96,7 @@
                     'theme_location' => 'primary',
                     'menu_class'     => 'nav__list',
                     'container'      => false,
-                    'fallback_cb'    => false,
+                    'fallback_cb'    => 'mbeurotech_default_menu',
                 ) );
                 ?>
             </nav>
