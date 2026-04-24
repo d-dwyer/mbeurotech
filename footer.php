@@ -4,8 +4,9 @@
     <div class="container">
         <div class="footer__grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-16">
             <div class="footer__brand">
-                <div class="logo mb-4 text-white">
-                    MB <span class="text-gold">EURO TECH</span>
+                <div class="logo mb-4 text-white flex items-center gap-3">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-light.png" alt="MB Euro Tech" style="height: 40px; width: auto;">
+                    <span>MB <span class="text-gold">EURO TECH</span></span>
                 </div>
                 <p class="text-silver mb-8">
                     Luxury automotive care specialized for Mercedes-Benz. Experience the difference of direct technician access.

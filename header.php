@@ -4,6 +4,8 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head(); ?>
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/images/favicon.png">
+
     <style>
         .site-header {
             position: fixed;
@@ -85,7 +87,10 @@
                     <?php if ( has_custom_logo() ) : ?>
                         <?php the_custom_logo(); ?>
                     <?php else : ?>
-                        MB <span class="text-gold">EURO TECH</span>
+                        <div class="flex items-center gap-3">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="MB Euro Tech" style="height: 48px; width: auto;">
+                            <div class="hidden sm:block">MB <span class="text-gold">EURO TECH</span></div>
+                        </div>
                     <?php endif; ?>
                 </a>
             </div>
