@@ -72,7 +72,12 @@
     </div>
 </footer>
 
+<button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+    <span class="material-symbols-outlined">expand_less</span>
+</button>
+
 <?php wp_footer(); ?>
+
 
 <style>
     .bg-surface-dark { background-color: #121212; }
