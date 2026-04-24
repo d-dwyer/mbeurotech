@@ -66,10 +66,11 @@ add_filter( 'nav_menu_link_attributes', 'mbeurotech_menu_link_class', 10, 3 );
  */
 function mbeurotech_default_menu() {
     $items = array(
-        'Home'     => home_url( '/' ),
-        'Services' => home_url( '/services/' ),
-        'About'    => home_url( '/about/' ),
-        'Contact'  => home_url( '/contact/' ),
+        'Home'       => home_url( '/' ),
+        'Services'   => home_url( '/services/' ),
+        'Expert Hub' => home_url( '/expert-hub/' ),
+        'About'      => home_url( '/about/' ),
+        'Contact'    => home_url( '/contact/' ),
     );
 
     echo '<ul class="nav__list">';
@@ -84,10 +85,11 @@ function mbeurotech_default_menu() {
  */
 function mbeurotech_footer_menu() {
     $items = array(
-        'Home'     => home_url( '/' ),
-        'Services' => home_url( '/services/' ),
-        'About'    => home_url( '/about/' ),
-        'Contact'  => home_url( '/contact/' ),
+        'Home'       => home_url( '/' ),
+        'Services'   => home_url( '/services/' ),
+        'Expert Hub' => home_url( '/expert-hub/' ),
+        'About'      => home_url( '/about/' ),
+        'Contact'    => home_url( '/contact/' ),
     );
 
     echo '<ul class="footer__menu">';
